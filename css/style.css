@@ -1,0 +1,328 @@
+.container{
+    background-color: hsl(0, 0%, 96%);
+    font-family: Montserrat;
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+    padding-top: 60px;
+}
+
+body,
+h3,
+h1,
+p{
+    margin: 0px;
+    padding: 0px;
+}
+
+input{
+    outline: none;
+}
+
+.block__wrp{
+    margin:0 auto;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    height: 727px;
+    background-color: #fff;
+    box-shadow: 0px 24px 80px rgba(0, 0, 0, 0.1);
+}
+
+.block__left{
+    letter-spacing: 0em;
+    width: 100%;
+    height: 43%;
+    padding: 41px 20px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: space-between;
+    display: flex;
+    flex-direction: row;
+    background-image: url('../img/pils_sm.png'), 
+                        url('../img/Ellipse_sm.png');
+    background-repeat: no-repeat;
+    background-position: 56px 122px, 
+                        58px 73px;
+    color: #212121;
+    padding-bottom: 0;
+}
+
+.left__title{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.left__txt{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.block__right{
+    width: 100%;
+    height: 50%;
+}
+
+.right__title{
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    color: #212121;
+    padding: 0 20px;
+}
+
+.right__form{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 32px;
+}
+
+.right__form-item{
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+}
+
+.right__form-label{
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 800;
+    color: #212121;
+}
+
+
+.right__form-label span{
+    color: #428A60;
+    padding-left: 3px;
+}
+
+.right__form-input{
+    margin-top: 10px;
+    font-family: Montserrat;
+    background: #F8F8F8;
+    border: 1px solid #E4E4E4;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 50px;
+    padding: 16px 11px;
+    width: 100%;
+}
+
+.right__form-wrp{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+    justify-content: space-between;
+    width: 280px;
+    position: relative;
+}
+
+.right__form-wrp .right__form-item{
+    width: 174px;
+}
+
+.block__form-btn{
+    margin-top: 30px;
+    width: 280px;
+    height: 42px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    background-color: #428A60;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.block__form-btn svg{
+    padding-left: 10px;
+}
+
+.right__form-select{
+    background: #F8F8F8;
+    border: 1px solid #E4E4E4;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 96px;
+    height: 50px;
+    align-self: flex-end;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 16px 10px;
+    position: relative;
+}
+
+.right__form-select-field{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.right__form-select-field span,
+.option span{
+    width: 32px;
+}
+
+.right__form-select:after {
+    content:'';
+    position: absolute;
+    width: 11px;
+    height: 6px;
+    background-image: url('../img/arrow.svg');
+    background-repeat: no-repeat;
+    top: 22px;
+    right: 6px;
+}
+
+.right__form-options{
+    position: absolute;
+    top: 48px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    background: #F8F8F8;
+}
+
+.option{
+    padding: 3px 0;
+}
+
+.option:hover{
+    background-color: #428A60;
+    cursor: pointer;
+}
+
+.block__secure-wrp{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    background: #F8F8F8;
+    margin-top: 11px;
+}
+
+.block__secure-wrp p{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.block__trusted{
+    padding-right: 20px;
+}
+
+.block__secure{
+    padding-left: 20px;
+}
+
+
+@media(min-width: 1120px){
+
+    .container{
+        padding-top: 75px;
+    }
+
+    .block__wrp{
+        width: 1120px;
+        flex-direction: row;
+        height: 500px;
+    }
+    
+    .block__left{
+        width: 50%;
+        height: 100%;
+        box-shadow: 0px 24px 80px rgba(0, 0, 0, 0.1);
+        border-radius: 1px;
+        padding: 40px;
+        flex-direction: column;
+        background-image: url('../img/pils.png'), 
+                            url('../img/Ellipse.png'), 
+                            url('../img/Ellipse1.png'), 
+                            linear-gradient(180deg, #428A60 0%, #35734F 100%);
+        background-position: 56px 212px, 
+                                19px 73px,
+                                233px center,
+                                center;
+        color: #fff;
+        padding-bottom: 36px;
+    }
+
+    .block__right{
+        width: 50%;
+        height: 100%;
+        box-shadow: 0px 24px 80px rgba(0, 0, 0, 0.1);
+    }
+    
+    .right__title{
+        padding: 29px 119px;
+        background: #F8F8F8;
+        line-height: 130%;
+        border-radius: 0 30px 0 0;
+    }
+
+    .right__title span {
+        display: block;
+    }
+    
+    .right__form{
+        background-color: #fff;
+        width: 100%;
+        height: calc(100% - 136px);
+        padding: 52px 3px 60px 0;
+    }
+    
+    .right__form-item{
+        width: 320px;
+    }
+
+    .right__form-wrp{
+        width: 320px;
+    }
+
+    .right__form-wrp .right__form-item{
+        width: 184px;
+    }
+
+    .right__form-input{
+        padding: 16px 20px;
+        letter-spacing: 0.6px;
+    }
+
+    .right__form-select{
+        width: 116px;
+        padding: 16px 20px;
+    }
+
+    .right__form-select:after {
+        right: 20px;
+    }
+
+    .block__secure-wrp{
+        display: none;
+    }
+
+    .block__form-btn{
+        margin-top: 39px;
+        width: 318px;
+    }
+
+    .right__title span{
+        display: block;
+    }
+}
+
+.hidden{
+    display: none;
+}
